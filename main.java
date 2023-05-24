@@ -43,7 +43,7 @@ public class main {
 
    public static String getProminentPollutent(Location city){
       
-      if(city.getCOValue() > city.getO3Value()){
+      if(city.getO3Value() > city.getPMValue()){
          
          return "Ozone (Level: " + city.getO3Category() + ")" + "\n\n" + getGuide("Ozone", city.getO3Category()) + "\n";
 
